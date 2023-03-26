@@ -3,7 +3,7 @@ const screen = document.getElementById('screen');
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        if (button.id !== 'ce' && button.id !== 'del' && button.id !== 'equals' && button.id!=='sqrt') {
+        if (button.id !== 'ce' && button.id !== 'del' && button.id !== 'equals' && button.id !== 'sqrt') {
             screen.value += button.textContent;
         }
     });
@@ -15,8 +15,6 @@ function validateInput(input) {
 }
 
 function calc() {
-    const screen = document.getElementById('screen');
-
     if (!validateInput(screen.value)) {
         screen.value = "Invalid input";
         return;
@@ -30,17 +28,16 @@ function calc() {
     }
 }
 
-function sqrt(){
+function sqrt() {
     const screen = document.getElementById('screen').value;
     document.getElementById('screen').value = math.sqrt(screen);
 }
 
 
 function deleteAll() {
-    document.getElementById('screen').value = '';
+    screen.value = '';
 
 }
 function deleteToken() {
-    const screen = document.getElementById('screen');
     screen.value = screen.value.slice(0, -1);
 }
