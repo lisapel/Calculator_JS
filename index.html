@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.2.0/math.js'></script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="screen" disabled>
+            </div>
+
+            <div class="buttons">
+                <button id="ce" onclick="deleteToken()">CE</button>
+                <button id="del" onclick="deleteAll()">DEL</button>
+                <button id="div">/</button>
+                <button id="mul">*</button>
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+                <button id="add">+</button>
+                <button id="four">4</button>
+                <button id="five">5</button>
+                <button id="six">6</button>
+                <button id="sub">-</button>
+                <button id="seven">7</button>
+                <button id="eight">8</button>
+                <button id="nine">9</button>
+                <button id="point">.</button>
+                <button id="zero">0</button>
+                <button id="sqrt" onclick="sqrt()">√</button>
+                <button id="equals" onclick="calc()">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

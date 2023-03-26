@@ -1,0 +1,64 @@
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(60px, auto) repeat(5, 60px);
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+}
+
+.buttons button {
+    background-color: rgba(67, 70, 69, 0.2);
+    color: rgb(12, 12, 13);
+    border-color: rgb(66, 66, 67);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 1px solid;
+
+}
+
+.buttons button:hover {
+    background-color: rgb(80, 80, 82);
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#screen {
+    height: 10em;
+    width: 22em;
+    margin: 1em;
+    border-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(28, 27, 36, 0.9);
+    border-radius: 10%;
+}
+
+.calculator {
+    display: grid;
+    flex-direction: column;
+    padding: 0.5em;
+    border-radius: 5%;
+    background-color: rgba(252, 249, 249, 0.5);
+    max-width: min-content;
+    padding-top: 1em;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    padding: 2em;
+}
+
+#mul {
+    font-size: large;
+}
+
+body {
+    background-image: url(image/pastel-background-sky-feminine-style_53876-104862.avif);
+}
